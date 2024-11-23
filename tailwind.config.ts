@@ -12,9 +12,6 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      backgroundImage: {
-        'hero-banner': "url('/parlement-hero.jpg')"
-      }
     },
   },
   plugins: [],
