@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ChevronRight } from "lucide-react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,20 +28,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="h-12 bg-white text-black font-sans">
-          <ul className="w-full h-full flex content-center px-4 gap-4">
-            <li className="h-full flex items-center">KiesKubus</li>
-            <li className="h-full flex items-center ml-auto">Doel</li>
-            <li className="h-full flex items-center">Over ons</li>
-          </ul>
-        </header>
-        <div id="subheader" className="h-8 bg-blue-600 text-white font-sans">
-          <ul className="w-full h-full flex content-center px-4 gap-4">
-            <li className="h-full flex items-center ml-auto">
-              Word campagnekoning! <ChevronRight />
-            </li>
-          </ul>
-        </div>
         {children}
       </body>
     </html>
