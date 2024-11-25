@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ChevronRight } from "lucide-react";
+import Link from 'next/link'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,7 +32,7 @@ export default function RootLayout({
       >
         <header className="h-12 bg-white text-black font-sans">
           <ul className="w-full h-full flex content-center px-4 gap-4">
-            <li className="h-full flex items-center">KiesKubus</li>
+            <li className="h-full flex items-center"><Link href="/">KiesKubus</Link></li>
             <li className="h-full flex items-center ml-auto">Doel</li>
             <li className="h-full flex items-center">Over ons</li>
           </ul>
