@@ -55,7 +55,8 @@ export default function Editor() {
           <Panel defaultSize={25} minSize={20}>
             <QuestionList 
               questions={questions} 
-              onSelectQuestion={(question: QuestionData) => setSelectedQuestion(question)}
+              onSelectQuestion={(question) => setSelectedQuestion(question)}
+              selectedQuestionId={selectedQuestion?.questionId ?? null}
             />
           </Panel>
           <PanelResizeHandle className="w-2 bg-gray-200 hover:bg-gray-300 transition-colors" />
