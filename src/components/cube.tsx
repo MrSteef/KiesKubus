@@ -8,7 +8,7 @@ import { motion } from "framer-motion-3d";
 
 export default function Cube() {
   return (
-    <Canvas className="w-full aspect-square">
+    <Canvas className="w-full aspect-square cursor-grab">
       <OrbitControls enableZoom={false} enablePan={false} />
       <ambientLight intensity={2} />
       <CubeMesh />
